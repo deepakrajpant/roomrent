@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs & Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Room Rental</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="/listings">Rooms</a></li>
+           <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+           <li class="nav-item"><a class="nav-link" href="/admin">Admin</a></li>
+           <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+           <li class="nav-item"><a class="nav-link active" href="/faqs">FAQs</a></li>
+           <li class="nav-item"><a class="nav-link" href="/reviews">Reviews</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5">
+    <h2>FAQs & Blog</h2>
+    <div class="accordion" id="faqsAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            What is Room Rental?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqsAccordion">
+          <div class="accordion-body">
+            Room Rental is a platform to find and book rooms easily.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            How do I book a room?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqsAccordion">
+          <div class="accordion-body">
+            Click on the "Book Now" button for the desired room and fill in the booking form.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" />
+
+    <h3>Latest Blog Posts</h3>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">
+        Tips for a Comfortable Stay in a Rented Room
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        How to Choose the Right Room for You
+      </a>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    &copy; 2025 Room Rental. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
